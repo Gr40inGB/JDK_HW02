@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="166.0" prefWidth="244.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gr40in.fxClient.ClientFxController">
+   <children>
+      <Button layoutX="32.0" layoutY="81.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Login" />
+      <Button layoutX="32.0" layoutY="120.0" mnemonicParsing="false" text="Register" />
+      <TextField accessibleRole="DATE_PICKER" accessibleText="login" alignment="CENTER" layoutX="32.0" layoutY="11.0" prefHeight="26.0" prefWidth="178.0" promptText="user name" />
+      <TextField accessibleHelp="fsafasd" accessibleRole="HYPERLINK" accessibleText="password" alignment="CENTER" layoutX="32.0" layoutY="45.0" prefHeight="26.0" prefWidth="178.0" promptText="password" />
+      <Button layoutX="174.0" layoutY="120.0" mnemonicParsing="false" text="Exit" />
+   </children>
+</AnchorPane>
