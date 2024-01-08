@@ -6,17 +6,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gr40in.fxServer.ServerFxController">
    <children>
       <ScrollPane layoutX="12.0" layoutY="14.0" prefHeight="267.0" prefWidth="576.0">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="568.0" />
         </content>
       </ScrollPane>
-      <Button layoutX="14.0" layoutY="291.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="185.0" text="Start Server" />
-      <Button layoutX="375.0" layoutY="291.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="207.0" text="Stop Server" />
-      <TextField layoutX="214.0" layoutY="315.0" />
-      <Label layoutX="216.0" layoutY="291.0" prefHeight="18.0" prefWidth="143.0" text="Port" />
+      <Button layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onAction="#startServer" prefHeight="47.0" prefWidth="185.0" text="Start Server" />
+      <Button layoutX="375.0" layoutY="291.0" mnemonicParsing="false" onAction="#stopServer" prefHeight="47.0" prefWidth="207.0" text="Stop Server" />
+      <TextField fx:id="fieldPort" layoutX="214.0" layoutY="315.0" />
+      <Label fx:id="labelPort" layoutX="216.0" layoutY="291.0" prefHeight="18.0" prefWidth="143.0" text="Port" />
    </children>
 </AnchorPane>

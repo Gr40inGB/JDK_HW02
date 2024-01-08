@@ -17,10 +17,12 @@ public class ChatConnection extends Thread {
     public ChatConnection(Socket socket, ConnectionListener listener) throws IOException {
         this.listener = listener;
         this.socket = socket;
-        if (socket != null) listener.connectionOk(this);
-        bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-        this.start();
+        if (socket != null) {
+            listener.connectionOk(this);
+            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            this.start();
+        }
     }
 
     @Override
